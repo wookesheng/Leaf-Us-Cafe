@@ -83,17 +83,19 @@ body{
 
 .wrapper{
     width: 100%;
+    /* create space below fixed navbar without a grey band */
+    padding-top: 9rem;
 }
 
 /* title */
 .caption{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: transparent; /* remove grey strip */
     margin-bottom: 40px;
     width: 100%;
-    height: 10vh;
+    padding: 1rem 0;
 }
 
 .caption h1{

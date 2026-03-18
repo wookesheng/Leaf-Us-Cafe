@@ -82,19 +82,20 @@ h2{
 /*Home Page */
 #home_background {
 	position: relative;
-	min-height: 100vh;
+	min-height: 80vh; /* further reduce height to cut black area */
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 				url('../asset/other/cafe-bg.jpg') no-repeat center center/cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 8rem;
+	padding-bottom: 1.5rem; /* smaller gap before next section */
 }
 
 .home-title {
 	font-size: 5rem;
 	font-weight: 700;
-	margin-bottom: 4rem;
+	margin-bottom: 3rem; /* slightly closer to content */
 	text-align: center;
 	color: white;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -104,10 +105,10 @@ h2{
 .Home_content {
 	width: 100%;
 	max-width: var(--container-width);
-	padding: 0 2rem;
+	padding: 0 2rem 0.5rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 4rem;
+	gap: 3rem; /* reduce vertical breathing room */
 	align-items: center;
 }
 
@@ -473,40 +474,8 @@ h2{
 	background: rgba(255, 255, 255, 0.05);
 }
 
-header{
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 10px 10%;
-	background-color: rgba(255, 255, 255, 0.1);
-	z-index: 999;
-}
-
-/* Design of Navigation Bar */
-.cafe{
-	cursor: pointer;
-	display: flex;
-	justify-content:space-between;
-	align-items: center;
-	width: 150px;
-}
-
-.name{
-	color: white;
-}
-
-.logo{
-	width: 50px;
-	filter: invert(1);
-}
-
-img[src*="shopping_cart"]{
-	width: 50px;
-	margin-right: 100px;
-	filter: invert(1);
-}
-/* End of the Navigation Bar */
+/* Navigation styles are defined in nav.css so that */
+/* the header looks consistent across all pages. */
 
 /* Menu Page */
 #menu_background {
