@@ -19,5 +19,7 @@ This group project was developed as a portfolio piece to demonstrate frontend de
 
 ## Screenshots
 - Home Page
+- 
+![Alt text](capture/Leafuscafe_webpage.png)
 
 ---
